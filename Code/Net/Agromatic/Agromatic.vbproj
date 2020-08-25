@@ -181,5 +181,41 @@
   <ItemGroup>
     <None Include="Resources\tractor %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anadir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lapiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tablero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satelite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tractor %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fertilizante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\combustible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camara %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Terreno.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

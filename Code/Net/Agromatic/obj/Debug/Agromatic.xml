@@ -22,7 +22,32 @@ Agromatic
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:Agromatic.My.Resources.Resources.agua">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agromatic.My.Resources.Resources.anadir">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Agromatic.My.Resources.Resources.arbol">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agromatic.My.Resources.Resources.archivo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agromatic.My.Resources.Resources.avatar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agromatic.My.Resources.Resources.camara__1_">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
@@ -37,6 +62,21 @@ Agromatic
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Agromatic.My.Resources.Resources.combustible">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agromatic.My.Resources.Resources.fertilizante">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agromatic.My.Resources.Resources.lapiz">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Agromatic.My.Resources.Resources.Max">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -47,12 +87,32 @@ Agromatic
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Agromatic.My.Resources.Resources.satelite">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Agromatic.My.Resources.Resources.sensor__1_">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Agromatic.My.Resources.Resources.tablero">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agromatic.My.Resources.Resources.Terreno">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Agromatic.My.Resources.Resources.tractor__1_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Agromatic.My.Resources.Resources.tractor__2_">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
