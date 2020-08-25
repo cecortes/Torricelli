@@ -12,3 +12,7 @@ D:\GITHUB\Torricelli\Code\Net\Agromatic\obj\Debug\Agromatic.vbproj.CopyComplete
 D:\GITHUB\Torricelli\Code\Net\Agromatic\obj\Debug\Agromatic.exe
 D:\GITHUB\Torricelli\Code\Net\Agromatic\obj\Debug\Agromatic.xml
 D:\GITHUB\Torricelli\Code\Net\Agromatic\obj\Debug\Agromatic.pdb
+D:\GITHUB\Torricelli\Code\Net\Agromatic\obj\Debug\Agromatic.ScrCultivos.resources
+D:\GITHUB\Torricelli\Code\Net\Agromatic\obj\Debug\Agromatic.ScrMetro.resources
+D:\GITHUB\Torricelli\Code\Net\Agromatic\obj\Debug\Agromatic.ScrRecursos.resources
+D:\GITHUB\Torricelli\Code\Net\Agromatic\obj\Debug\Agromatic.scrTerreno.resources

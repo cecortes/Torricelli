@@ -57,5 +57,72 @@ Agromatic
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="M:Agromatic.scrMain.AbrirFormPanel``1">
+ <summary>
+ Se encarga de crear un nuevo objeto del tipo Form
+ Busca el formulario recibido como parámetro en la colección
+ Asigna la creación del formulario recibido al objeto creado
+ Le asigna los parámetros necesarios para mostrarlo
+ Lo muestra y lo trae al frente
+ </summary>
+ <typeparam name="MiForm"></typeparam>
+</member>
+<member name="M:Agromatic.scrMain.btnClose_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cierra el formulario
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Agromatic.scrMain.btnMax_Click(System.Object,System.EventArgs)">
+ <summary>
+ Minimiza el formulario
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Agromatic.scrMain.btnMin_Click(System.Object,System.EventArgs)">
+ <summary>
+ Minimiza el formulario
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Agromatic.scrMain.btnTerr_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cambia el color del botón seleccionado
+ Cambia el color de los demás botones
+ Muestra el formulario de Terreno
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Agromatic.scrMain.btnCultivos_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cambia el color del botón seleccionado
+ Cambia el color de los demás botones
+ Muestra el formulario de Cultivo
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Agromatic.scrMain.btnMetro_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cambia el color del botón seleccionado
+ Cambia el color de los demás botones
+ Muestra el formulario de Metrología
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Agromatic.scrMain.btnRecur_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cambia el color del botón seleccionado
+ Cambia el color de los demás botones
+ Muestra el formulario de Recursos
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
 </members>
 </doc>
