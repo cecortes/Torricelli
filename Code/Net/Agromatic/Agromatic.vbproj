@@ -133,5 +133,17 @@
   <ItemGroup>
     <None Include="Resources\Cancel.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sensor %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tractor %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
