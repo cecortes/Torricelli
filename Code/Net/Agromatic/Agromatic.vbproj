@@ -127,5 +127,11 @@
   <ItemGroup>
     <None Include="Resources\Min.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Max.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
