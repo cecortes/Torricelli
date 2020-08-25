@@ -1,0 +1,14 @@
+D:\GITHUB\Torricelli\Code\Net\Agromatic\bin\Debug\Agromatic.exe.config
+D:\GITHUB\Torricelli\Code\Net\Agromatic\bin\Debug\Agromatic.exe
+D:\GITHUB\Torricelli\Code\Net\Agromatic\bin\Debug\Agromatic.pdb
+D:\GITHUB\Torricelli\Code\Net\Agromatic\bin\Debug\Agromatic.xml
+D:\GITHUB\Torricelli\Code\Net\Agromatic\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\GITHUB\Torricelli\Code\Net\Agromatic\obj\Debug\Agromatic.vbprojAssemblyReference.cache
+D:\GITHUB\Torricelli\Code\Net\Agromatic\obj\Debug\Agromatic.scrMain.resources
+D:\GITHUB\Torricelli\Code\Net\Agromatic\obj\Debug\Agromatic.Resources.resources
+D:\GITHUB\Torricelli\Code\Net\Agromatic\obj\Debug\Agromatic.vbproj.GenerateResource.cache
+D:\GITHUB\Torricelli\Code\Net\Agromatic\obj\Debug\Agromatic.vbproj.CoreCompileInputs.cache
+D:\GITHUB\Torricelli\Code\Net\Agromatic\obj\Debug\Agromatic.vbproj.CopyComplete
+D:\GITHUB\Torricelli\Code\Net\Agromatic\obj\Debug\Agromatic.exe
+D:\GITHUB\Torricelli\Code\Net\Agromatic\obj\Debug\Agromatic.xml
+D:\GITHUB\Torricelli\Code\Net\Agromatic\obj\Debug\Agromatic.pdb
