@@ -7,6 +7,7 @@ Public Class scrTerreno
 
     Dim seriesStr() = {"Riego", "Combustible", "Fertilizante", "Pesticida"}
     Dim tagStr() = {"1", "2", "3", "4"}
+    Dim tempStr, paStr, altStr, temp2Str, hrStr, campStr As String
 
     'BlueCom
     Dim WithEvents SerialPort As New IO.Ports.SerialPort
@@ -89,6 +90,61 @@ Public Class scrTerreno
 
     End Sub
 
+    ''' <summary>
+    ''' Convierte los valores de cadena a enteros
+    ''' Realiza las operaciones necesarias
+    ''' Actualiza los gauge del tablero
+    ''' </summary>
+    Private Sub Dashboard()
+
+        'Locales
+        Dim tempFlt As Double = 0.00
+        Dim temp As Integer = 0
+        Dim hrFlt As Double = 0.00
+        Dim humedad As Integer = 0
+        Dim temp2Flt As Double = 0.00
+        Dim temp2 As Integer = 0
+        Dim recursos As Integer = 0
+        Dim paFlt As Double = 0.00
+        Dim paInt As Integer = 0
+
+        'Debug
+        'rtbBlueCom.AppendText(">> tempStr: " + tempStr + vbCrLf)
+
+        'Excepción controlada
+        Try
+
+            'Conversiones
+            tempFlt = Double.Parse(tempStr)
+            temp = Convert.ToInt32(tempFlt)
+            hrFlt = Double.Parse(hrStr)
+            humedad = Convert.ToInt32(hrFlt)
+            temp2Flt = Double.Parse(temp2Str)
+            temp2 = Convert.ToInt32(temp2Flt)
+            recursos = Integer.Parse(campStr)
+
+            paFlt = Double.Parse(paStr)
+            paInt = Convert.ToInt32(paFlt)
+
+            'Debug
+            'rtbBlueCom.AppendText(">> temp: " + temp + vbCrLf)
+
+        Catch ex As Exception
+
+        End Try
+
+        'Parametrización
+        Dim pAtm As Integer = ((paInt - 800) * 100) / 400
+
+        'Actualizaciones
+        GauTemp.Value = temp
+        GauHr.Value = humedad
+        GauTempSoil.Value = temp2
+        GauHuman.Value = recursos
+        GauPa.Value = pAtm
+
+    End Sub
+
 #End Region
 
 #Region "DELEGATE"
@@ -115,7 +171,18 @@ Public Class scrTerreno
         Dim datoStr() As String = dato.Split(",")
 
         'Debug
-        rtbBlueCom.AppendText(">> T: " + datoStr(0) + " >> Pa: " + datoStr(1) + " >> Alt: " + datoStr(2) + " >> Ts: " + datoStr(3) + " >> Hr: " + datoStr(4) + " >> Lux: " + datoStr(5) + " >> Lum: " + datoStr(6) + vbCrLf)
+        'rtbBlueCom.AppendText(">> T: " + datoStr(0) + " >> Pa: " + datoStr(1) + " >> Alt: " + datoStr(2) + " >> Ts: " + datoStr(3) + " >> Hr: " + datoStr(4) + " >> Lux: " + datoStr(5) + " >> Lum: " + datoStr(6) + vbCrLf)
+
+        'Variables globales
+        tempStr = datoStr(0)
+        paStr = datoStr(1)
+        altStr = datoStr(2)
+        temp2Str = datoStr(3)
+        hrStr = datoStr(4)
+        campStr = datoStr(6)
+
+        'Método para actualizar datos
+        Dashboard()
 
         rtbBlueCom.ScrollToCaret()
 

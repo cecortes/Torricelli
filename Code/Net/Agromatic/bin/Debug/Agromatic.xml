@@ -197,6 +197,13 @@ Agromatic
  Muestra al usuario el estado de la conexión
  </summary>
 </member>
+<member name="M:Agromatic.scrTerreno.Dashboard">
+ <summary>
+ Convierte los valores de cadena a enteros
+ Realiza las operaciones necesarias
+ Actualiza los gauge del tablero
+ </summary>
+</member>
 <member name="M:Agromatic.scrTerreno.dataBlueCom(System.String)">
  <summary>
  Recibe como cadena el dato recibido por bluetooth
