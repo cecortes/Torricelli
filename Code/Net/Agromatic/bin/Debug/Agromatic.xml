@@ -184,5 +184,18 @@ Agromatic
  <param name="sender"></param>
  <param name="e"></param>
 </member>
+<member name="M:Agromatic.scrTerreno.Init">
+ <summary>
+ Carga valores iniciales para las etiquetas.
+ Crea la gráfica inicial.
+ </summary>
+</member>
+<member name="M:Agromatic.scrTerreno.scrTerreno_Load(System.Object,System.EventArgs)">
+ <summary>
+ Carga los valores iniciales para los label y gráficas.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
 </members>
 </doc>

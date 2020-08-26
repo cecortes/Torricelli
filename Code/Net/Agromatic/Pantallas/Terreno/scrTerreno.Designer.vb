@@ -22,15 +22,20 @@ Partial Class scrTerreno
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(scrTerreno))
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series5 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series7 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series8 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.pnlWrp = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.pnlProgress = New System.Windows.Forms.Panel()
+        Me.BunifuGauge1 = New Bunifu.Framework.UI.BunifuGauge()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.BunifuSeparator8 = New Bunifu.Framework.UI.BunifuSeparator()
+        Me.Panel10 = New System.Windows.Forms.Panel()
         Me.pnlGraf = New System.Windows.Forms.Panel()
         Me.chrtTotal = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.pnlTop3 = New System.Windows.Forms.Panel()
@@ -84,13 +89,9 @@ Partial Class scrTerreno
         Me.btnDel = New Bunifu.Framework.UI.BunifuImageButton()
         Me.btnEdit = New Bunifu.Framework.UI.BunifuImageButton()
         Me.btnAdd = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.pnlProgress = New System.Windows.Forms.Panel()
-        Me.BunifuGauge1 = New Bunifu.Framework.UI.BunifuGauge()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.BunifuSeparator8 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.pnlWrp.SuspendLayout()
         Me.Panel6.SuspendLayout()
+        Me.pnlProgress.SuspendLayout()
         Me.pnlGraf.SuspendLayout()
         CType(Me.chrtTotal, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlTop3.SuspendLayout()
@@ -112,7 +113,6 @@ Partial Class scrTerreno
         CType(Me.btnDel, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnEdit, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnAdd, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlProgress.SuspendLayout()
         Me.SuspendLayout()
         '
         'pnlWrp
@@ -140,42 +140,106 @@ Partial Class scrTerreno
         Me.Panel6.Size = New System.Drawing.Size(1024, 170)
         Me.Panel6.TabIndex = 3
         '
+        'pnlProgress
+        '
+        Me.pnlProgress.Controls.Add(Me.BunifuGauge1)
+        Me.pnlProgress.Controls.Add(Me.Label9)
+        Me.pnlProgress.Controls.Add(Me.BunifuSeparator8)
+        Me.pnlProgress.Dock = System.Windows.Forms.DockStyle.Right
+        Me.pnlProgress.Location = New System.Drawing.Point(222, 0)
+        Me.pnlProgress.Name = "pnlProgress"
+        Me.pnlProgress.Size = New System.Drawing.Size(200, 170)
+        Me.pnlProgress.TabIndex = 8
+        '
+        'BunifuGauge1
+        '
+        Me.BunifuGauge1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuGauge1.BackgroundImage = CType(resources.GetObject("BunifuGauge1.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuGauge1.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuGauge1.ForeColor = System.Drawing.Color.White
+        Me.BunifuGauge1.Location = New System.Drawing.Point(4, 37)
+        Me.BunifuGauge1.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuGauge1.Name = "BunifuGauge1"
+        Me.BunifuGauge1.ProgressBgColor = System.Drawing.Color.Gray
+        Me.BunifuGauge1.ProgressColor1 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(16, Byte), Integer))
+        Me.BunifuGauge1.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(9, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.BunifuGauge1.Size = New System.Drawing.Size(196, 129)
+        Me.BunifuGauge1.Suffix = " %"
+        Me.BunifuGauge1.TabIndex = 2
+        Me.BunifuGauge1.Thickness = 30
+        Me.BunifuGauge1.Value = 5
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(96, Byte), Integer))
+        Me.Label9.Location = New System.Drawing.Point(3, 4)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(91, 24)
+        Me.Label9.TabIndex = 0
+        Me.Label9.Text = "Progreso:"
+        '
+        'BunifuSeparator8
+        '
+        Me.BunifuSeparator8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuSeparator8.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator8.LineColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.BunifuSeparator8.LineThickness = 1
+        Me.BunifuSeparator8.Location = New System.Drawing.Point(0, 1)
+        Me.BunifuSeparator8.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.BunifuSeparator8.Name = "BunifuSeparator8"
+        Me.BunifuSeparator8.Size = New System.Drawing.Size(200, 43)
+        Me.BunifuSeparator8.TabIndex = 1
+        Me.BunifuSeparator8.Transparency = 255
+        Me.BunifuSeparator8.Vertical = False
+        '
+        'Panel10
+        '
+        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel10.Location = New System.Drawing.Point(422, 0)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(15, 170)
+        Me.Panel10.TabIndex = 7
+        '
         'pnlGraf
         '
         Me.pnlGraf.Controls.Add(Me.chrtTotal)
         Me.pnlGraf.Controls.Add(Me.pnlTop3)
-        Me.pnlGraf.Dock = System.Windows.Forms.DockStyle.Left
-        Me.pnlGraf.Location = New System.Drawing.Point(215, 0)
+        Me.pnlGraf.Dock = System.Windows.Forms.DockStyle.Right
+        Me.pnlGraf.Location = New System.Drawing.Point(437, 0)
         Me.pnlGraf.Name = "pnlGraf"
         Me.pnlGraf.Size = New System.Drawing.Size(587, 170)
         Me.pnlGraf.TabIndex = 6
         '
         'chrtTotal
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.chrtTotal.ChartAreas.Add(ChartArea1)
+        ChartArea2.Name = "ChartArea1"
+        Me.chrtTotal.ChartAreas.Add(ChartArea2)
         Me.chrtTotal.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend1.Name = "Legend1"
-        Me.chrtTotal.Legends.Add(Legend1)
+        Legend2.Name = "Legend1"
+        Me.chrtTotal.Legends.Add(Legend2)
         Me.chrtTotal.Location = New System.Drawing.Point(0, 28)
         Me.chrtTotal.Name = "chrtTotal"
-        Series1.ChartArea = "ChartArea1"
-        Series1.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series1.Legend = "Legend1"
-        Series1.Name = "Riego"
-        Series2.ChartArea = "ChartArea1"
-        Series2.Legend = "Legend1"
-        Series2.Name = "Combustible"
-        Series3.ChartArea = "ChartArea1"
-        Series3.Legend = "Legend1"
-        Series3.Name = "Fertilizante"
-        Series4.ChartArea = "ChartArea1"
-        Series4.Legend = "Legend1"
-        Series4.Name = "Pesticida"
-        Me.chrtTotal.Series.Add(Series1)
-        Me.chrtTotal.Series.Add(Series2)
-        Me.chrtTotal.Series.Add(Series3)
-        Me.chrtTotal.Series.Add(Series4)
+        Series5.ChartArea = "ChartArea1"
+        Series5.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series5.Legend = "Legend1"
+        Series5.Name = "Riego"
+        Series6.ChartArea = "ChartArea1"
+        Series6.Legend = "Legend1"
+        Series6.Name = "Combustible"
+        Series7.ChartArea = "ChartArea1"
+        Series7.Legend = "Legend1"
+        Series7.Name = "Fertilizante"
+        Series8.ChartArea = "ChartArea1"
+        Series8.Legend = "Legend1"
+        Series8.Name = "Pesticida"
+        Me.chrtTotal.Series.Add(Series5)
+        Me.chrtTotal.Series.Add(Series6)
+        Me.chrtTotal.Series.Add(Series7)
+        Me.chrtTotal.Series.Add(Series8)
         Me.chrtTotal.Size = New System.Drawing.Size(587, 142)
         Me.chrtTotal.TabIndex = 1
         Me.chrtTotal.Text = "Chart1"
@@ -569,7 +633,7 @@ Partial Class scrTerreno
         Me.lblFin.AutoSize = True
         Me.lblFin.Font = New System.Drawing.Font("Corbel", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFin.ForeColor = System.Drawing.Color.White
-        Me.lblFin.Location = New System.Drawing.Point(117, 105)
+        Me.lblFin.Location = New System.Drawing.Point(55, 111)
         Me.lblFin.Name = "lblFin"
         Me.lblFin.Size = New System.Drawing.Size(45, 29)
         Me.lblFin.TabIndex = 4
@@ -581,7 +645,7 @@ Partial Class scrTerreno
         Me.lblIni.AutoSize = True
         Me.lblIni.Font = New System.Drawing.Font("Corbel", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblIni.ForeColor = System.Drawing.Color.White
-        Me.lblIni.Location = New System.Drawing.Point(117, 52)
+        Me.lblIni.Location = New System.Drawing.Point(55, 58)
         Me.lblIni.Name = "lblIni"
         Me.lblIni.Size = New System.Drawing.Size(45, 29)
         Me.lblIni.TabIndex = 3
@@ -653,7 +717,7 @@ Partial Class scrTerreno
         Me.rnkCultivo.Name = "rnkCultivo"
         Me.rnkCultivo.Size = New System.Drawing.Size(208, 28)
         Me.rnkCultivo.TabIndex = 3
-        Me.rnkCultivo.Value = 2
+        Me.rnkCultivo.Value = 4
         '
         'lblCultivo
         '
@@ -810,70 +874,6 @@ Partial Class scrTerreno
         Me.btnAdd.TabStop = False
         Me.btnAdd.Zoom = 10
         '
-        'Panel10
-        '
-        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel10.Location = New System.Drawing.Point(1009, 0)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(15, 170)
-        Me.Panel10.TabIndex = 7
-        '
-        'pnlProgress
-        '
-        Me.pnlProgress.Controls.Add(Me.BunifuGauge1)
-        Me.pnlProgress.Controls.Add(Me.Label9)
-        Me.pnlProgress.Controls.Add(Me.BunifuSeparator8)
-        Me.pnlProgress.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlProgress.Location = New System.Drawing.Point(809, 0)
-        Me.pnlProgress.Name = "pnlProgress"
-        Me.pnlProgress.Size = New System.Drawing.Size(200, 170)
-        Me.pnlProgress.TabIndex = 8
-        '
-        'BunifuGauge1
-        '
-        Me.BunifuGauge1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuGauge1.BackgroundImage = CType(resources.GetObject("BunifuGauge1.BackgroundImage"), System.Drawing.Image)
-        Me.BunifuGauge1.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuGauge1.ForeColor = System.Drawing.Color.White
-        Me.BunifuGauge1.Location = New System.Drawing.Point(4, 37)
-        Me.BunifuGauge1.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuGauge1.Name = "BunifuGauge1"
-        Me.BunifuGauge1.ProgressBgColor = System.Drawing.Color.Gray
-        Me.BunifuGauge1.ProgressColor1 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(16, Byte), Integer))
-        Me.BunifuGauge1.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(9, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.BunifuGauge1.Size = New System.Drawing.Size(196, 129)
-        Me.BunifuGauge1.Suffix = " %"
-        Me.BunifuGauge1.TabIndex = 2
-        Me.BunifuGauge1.Thickness = 30
-        Me.BunifuGauge1.Value = 5
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Corbel", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(96, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(3, 4)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(91, 24)
-        Me.Label9.TabIndex = 0
-        Me.Label9.Text = "Progreso:"
-        '
-        'BunifuSeparator8
-        '
-        Me.BunifuSeparator8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BunifuSeparator8.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuSeparator8.LineColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.BunifuSeparator8.LineThickness = 1
-        Me.BunifuSeparator8.Location = New System.Drawing.Point(0, 1)
-        Me.BunifuSeparator8.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.BunifuSeparator8.Name = "BunifuSeparator8"
-        Me.BunifuSeparator8.Size = New System.Drawing.Size(200, 43)
-        Me.BunifuSeparator8.TabIndex = 1
-        Me.BunifuSeparator8.Transparency = 255
-        Me.BunifuSeparator8.Vertical = False
-        '
         'scrTerreno
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
@@ -890,6 +890,8 @@ Partial Class scrTerreno
         Me.Text = "scrTerreno"
         Me.pnlWrp.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
+        Me.pnlProgress.ResumeLayout(False)
+        Me.pnlProgress.PerformLayout()
         Me.pnlGraf.ResumeLayout(False)
         CType(Me.chrtTotal, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlTop3.ResumeLayout(False)
@@ -919,8 +921,6 @@ Partial Class scrTerreno
         CType(Me.btnDel, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnEdit, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnAdd, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlProgress.ResumeLayout(False)
-        Me.pnlProgress.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
