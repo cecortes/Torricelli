@@ -190,9 +190,41 @@ Agromatic
  Crea la gráfica inicial.
  </summary>
 </member>
+<member name="M:Agromatic.scrTerreno.ConectBlueSerial">
+ <summary>
+ Valida que el puerto este libre
+ Se encarga de configurar y abrir el puerto seleccionado
+ Muestra al usuario el estado de la conexión
+ </summary>
+</member>
+<member name="M:Agromatic.scrTerreno.dataBlueCom(System.String)">
+ <summary>
+ Recibe como cadena el dato recibido por bluetooth
+ Muestra en el rich text box
+ Lo descompone en los datos individuales y los almacena en sus variables
+ Actualiza el dashboard
+ </summary>
+ <param name="dato"></param>
+</member>
 <member name="M:Agromatic.scrTerreno.scrTerreno_Load(System.Object,System.EventArgs)">
  <summary>
  Carga los valores iniciales para los label y gráficas.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Agromatic.scrTerreno.btnConectar_Click(System.Object,System.EventArgs)">
+ <summary>
+ Se encarga de llamar al método para realizar la conexión al bluetooth
+ Informa al usuario del estado
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Agromatic.scrTerreno.SerialPort_DataReceived(System.Object,System.IO.Ports.SerialDataReceivedEventArgs)">
+ <summary>
+ Recibe los datos seriales hasta recibir una nueva línea.
+ Invoca al método delegado para mostrar los datos en consola y actualizar el dashboard.
  </summary>
  <param name="sender"></param>
  <param name="e"></param>

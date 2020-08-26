@@ -22,13 +22,13 @@ Partial Class scrTerreno
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(scrTerreno))
         Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series5 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim Series7 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim Series8 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(scrTerreno))
         Me.pnlWrp = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.pnlProgress = New System.Windows.Forms.Panel()
@@ -89,6 +89,8 @@ Partial Class scrTerreno
         Me.btnDel = New Bunifu.Framework.UI.BunifuImageButton()
         Me.btnEdit = New Bunifu.Framework.UI.BunifuImageButton()
         Me.btnAdd = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.rtbBlueCom = New System.Windows.Forms.RichTextBox()
+        Me.btnConectar = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.pnlWrp.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.pnlProgress.SuspendLayout()
@@ -96,6 +98,7 @@ Partial Class scrTerreno
         CType(Me.chrtTotal, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlTop3.SuspendLayout()
         Me.pnlHuman.SuspendLayout()
+        Me.pnlTop2.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.pnlTempSoil.SuspendLayout()
         Me.pnlPa.SuspendLayout()
@@ -332,6 +335,8 @@ Partial Class scrTerreno
         '
         'pnlTop2
         '
+        Me.pnlTop2.Controls.Add(Me.btnConectar)
+        Me.pnlTop2.Controls.Add(Me.rtbBlueCom)
         Me.pnlTop2.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTop2.Location = New System.Drawing.Point(0, 320)
         Me.pnlTop2.Name = "pnlTop2"
@@ -874,6 +879,57 @@ Partial Class scrTerreno
         Me.btnAdd.TabStop = False
         Me.btnAdd.Zoom = 10
         '
+        'rtbBlueCom
+        '
+        Me.rtbBlueCom.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.rtbBlueCom.BackColor = System.Drawing.Color.Black
+        Me.rtbBlueCom.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.rtbBlueCom.Font = New System.Drawing.Font("Consolas", 7.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtbBlueCom.ForeColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.rtbBlueCom.Location = New System.Drawing.Point(200, 6)
+        Me.rtbBlueCom.Name = "rtbBlueCom"
+        Me.rtbBlueCom.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
+        Me.rtbBlueCom.Size = New System.Drawing.Size(589, 99)
+        Me.rtbBlueCom.TabIndex = 0
+        Me.rtbBlueCom.Text = "NA"
+        '
+        'btnConectar
+        '
+        Me.btnConectar.Activecolor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.btnConectar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(16, Byte), Integer))
+        Me.btnConectar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnConectar.BorderRadius = 7
+        Me.btnConectar.ButtonText = "Conectar"
+        Me.btnConectar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnConectar.DisabledColor = System.Drawing.Color.Gray
+        Me.btnConectar.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnConectar.Iconimage = CType(resources.GetObject("btnConectar.Iconimage"), System.Drawing.Image)
+        Me.btnConectar.Iconimage_right = Nothing
+        Me.btnConectar.Iconimage_right_Selected = Nothing
+        Me.btnConectar.Iconimage_Selected = Nothing
+        Me.btnConectar.IconMarginLeft = 0
+        Me.btnConectar.IconMarginRight = 0
+        Me.btnConectar.IconRightVisible = True
+        Me.btnConectar.IconRightZoom = 0R
+        Me.btnConectar.IconVisible = True
+        Me.btnConectar.IconZoom = 90.0R
+        Me.btnConectar.IsTab = False
+        Me.btnConectar.Location = New System.Drawing.Point(27, 40)
+        Me.btnConectar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnConectar.Name = "btnConectar"
+        Me.btnConectar.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(16, Byte), Integer))
+        Me.btnConectar.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnConectar.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnConectar.selected = False
+        Me.btnConectar.Size = New System.Drawing.Size(150, 42)
+        Me.btnConectar.TabIndex = 1
+        Me.btnConectar.Text = "Conectar"
+        Me.btnConectar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnConectar.Textcolor = System.Drawing.Color.Black
+        Me.btnConectar.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
         'scrTerreno
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
@@ -898,6 +954,7 @@ Partial Class scrTerreno
         Me.pnlTop3.PerformLayout()
         Me.pnlHuman.ResumeLayout(False)
         Me.pnlHuman.PerformLayout()
+        Me.pnlTop2.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.pnlTempSoil.ResumeLayout(False)
         Me.pnlTempSoil.PerformLayout()
@@ -985,4 +1042,6 @@ Partial Class scrTerreno
     Friend WithEvents Label9 As Label
     Friend WithEvents BunifuSeparator8 As Bunifu.Framework.UI.BunifuSeparator
     Friend WithEvents Panel10 As Panel
+    Friend WithEvents rtbBlueCom As RichTextBox
+    Friend WithEvents btnConectar As Bunifu.Framework.UI.BunifuFlatButton
 End Class
